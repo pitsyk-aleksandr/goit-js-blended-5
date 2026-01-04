@@ -14,20 +14,38 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <main>
+    <main class="container">
       <h1 class="main-title">JS Blended #5</h1>
-
+      <button type="button" class="btn-toggle-theme">Change Color Theme</button>
       <!-- В файлі index.html створено форму з двома інпутами: -->
       <!-- Текстове поле для введення назви завдання. -->
       <!-- Текстове поле для введення тексту завдання. -->
       <!-- Кнопка "Add", яка додає завдання до списку. -->
       <!-- Також є пустий список <ul id="task-list">, куди будуть додаватися завдання. -->
 
-      <input type="text" name="task-name" />
-      <input type="text" name="task-text" />
-      <button type="submit">Add</button>
+      <form class="form-add-task">
+        <label for="task-name">
+          Name
+          <input type="text" id="task-name" name="task-name" />
+        </label>
+        <label for="task-description">
+          Text
+          <input type="text" id="task-description" name="task-description" />
+        </label>
 
-      <ul id="task-list"></ul>
+        <button type="submit" class="btn-add-task">Add</button>
+      </form>
+
+      <ul id="task-list">
+        <!-- <li class="task-item" id="${task.id}">
+          <div class="task-content">
+            <p class="id">${task.id}</p>
+            <p class="name">${task.name}</p>
+            <p class="description">${task.description}</p>
+          </div>
+          <button type="button" class="btn-delete-task">Delete</button>
+        </li> -->
+      </ul>
     </main>
 
     <script type="module" src="./main.js"></script>

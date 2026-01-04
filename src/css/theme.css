@@ -1,0 +1,32 @@
+/* Схеми кольорів */
+
+/* Вы можете заставить сайт подстраиваться под настройки операционной системы пользователя
+ (Windows, macOS, Android) с помощью медиа-запроса prefers-color-scheme */
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --bg-color: #1a1a1a;
+    --text-color: #f5f5f5;
+  }
+} */
+
+/* Кольори за замовчуванням (світла тема) */
+[data-theme='light'] {
+  --bg-color: #f5f5f5;
+  --text-color: #1a1a1a;
+  --btn-bg-color: #595cde;
+  --btn-text-color: #ffffff;
+}
+
+/* Кольори для темної теми */
+[data-theme='dark'] {
+  --bg-color: #1a1a1a;
+  --text-color: #f5f5f5;
+  --btn-bg-color: #595cde;
+  --btn-text-color: #39e092;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: 0.6s; /* Плавний перехід кольорів */
+}

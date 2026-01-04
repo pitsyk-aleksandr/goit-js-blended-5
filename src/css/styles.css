@@ -13,4 +13,7 @@
 /* Sections style */
 
 /* My style */
-@import url('./task.css');
+/* Кольорова тема */
+@import url('./theme.css');
+
+@import url('./tasks.css');
